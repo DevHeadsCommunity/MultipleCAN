@@ -102,6 +102,7 @@ The CAN network consists of multiple CAN nodes interconnected through a differen
 
 <img width="620" height="349" alt="image" src="https://github.com/user-attachments/assets/d1e611e4-3508-4fd5-95ad-d6d24ca49bb1" />
 
+The CAN protocol uses structured data frames to ensure reliable communication. Each frame consists of several fields: the Arbitration Field (which includes the identifier and priority), the Control Field (which indicates data length), the Data Field (containing the actual payload), and error-checking fields like CRC, ACK, and delimiters. CAN supports both Standard (11-bit identifier) and Extended (29-bit identifier) formats, providing flexibility in addressing and message filtering.
 
 ---
 
