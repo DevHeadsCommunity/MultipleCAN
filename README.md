@@ -38,8 +38,10 @@ The CAN (Controller Area Network) Bus is a robust communication protocol designe
 ---
 
 ## CAN BUS NETWORK
+The CAN Bus network is a multi-bus system where multiple ECUs (Electronic Control Units) communicate over a shared two-wire differential bus. It supports multiple nodes connected together, allowing each node to send and receive messages without a central master. This decentralized approach makes the system scalable, reliable, and ideal for industrial and automotive environments.
 
-<img width="678" height="346" alt="image" src="https://github.com/user-attachments/assets/f8ba0466-5f56-49ce-ae17-1cb6f867522c" />
+   <img width="678" height="346" alt="image" src="https://github.com/user-attachments/assets/f8ba0466-5f56-49ce-ae17-1cb6f867522c" />
+     
 
 ---
 
