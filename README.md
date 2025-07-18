@@ -19,7 +19,6 @@ This project demonstrate how to make STM32F303K8 Nucleo board as CAN Nodes
 - [OVERVIEW](#overview)
 - [CAN BUS NETWORK](#can-bus-network)
 - [NETWORK TOPOLOGY](#network-topology)
-- [CAN CONTROLLER](#can-controller)
 - [WHAT IS A CAN NODE?](#what-is-a-can-node)
 - [MCP2551 CAN TRANSCEIVER](#mcp2551-can-transceiver)
 - [CONNECTION DETAILS](#connection-details)
@@ -47,16 +46,11 @@ The CAN Bus network is a multi-bus system where multiple ECUs (Electronic Contro
 
 ## NETWORK TOPOLOGY
 
-<img width="678" height="346" alt="image" src="https://github.com/user-attachments/assets/9d5fe822-6a7b-47e8-a64c-2e7b18fb497d" />
+The CAN network topology connects multiple CAN nodes using two differential lines: CANH and CANL. Each node taps into the bus in parallel and includes termination resistors (RT) at both ends of the line to reduce signal reflections. This simple linear topology ensures reliable communication over long distances and supports real-time data exchange among nodes.
 
 ---
 
-## CAN CONTROLLER
 
-<img width="678" height="346" alt="image" src="https://github.com/user-attachments/assets/f931fa69-b204-4caf-b321-e2bb892d62fb" />
-
-
----
 
 ## WHAT IS A CAN NODE?
 
