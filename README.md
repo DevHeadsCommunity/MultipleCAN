@@ -43,7 +43,6 @@ The CAN Bus network is a multi-bus system where multiple ECUs (Electronic Contro
     <img width="678" height="346" alt="image" src="https://github.com/user-attachments/assets/f8ba0466-5f56-49ce-ae17-1cb6f867522c" />
 </p>
 
- 
      
 
 ---
@@ -61,16 +60,19 @@ The CAN network topology connects multiple CAN nodes using two differential line
 - **CAN Transceiver**: Converts signal from physical bus into logic level high/low (voltage level), sends to CAN controller  
 - **CAN Controller**:
   - Defines the baud rate  
-  - Interprets CAN frames
- 
-  - <img width="270" height="373" alt="image" src="https://github.com/user-attachments/assets/e2d8340f-a6e3-41c4-b601-b5cd14032f2f" />
-
+  - Interprets CAN frames 
+  
+<p align="center">
+    <img width="270" height="373" alt="image" src="https://github.com/user-attachments/assets/e2d8340f-a6e3-41c4-b601-b5cd14032f2f" />
+</p>
 
 ---
 
 ## MCP2551 CAN TRANSCEIVER
 
-<img width="242" height="208" alt="image" src="https://github.com/user-attachments/assets/73f40d03-f98a-49ba-995f-f454a15f203e" />
+<p align="center">
+    <img width="242" height="208" alt="image" src="https://github.com/user-attachments/assets/73f40d03-f98a-49ba-995f-f454a15f203e" />
+</p>
 
 - Handles bus connection  
 - Two bus pins: CANH (High) & CANL (Low)  
@@ -83,7 +85,9 @@ The CAN network topology connects multiple CAN nodes using two differential line
 
 ## CONNECTION DETAILS
 
-<img width="898" height="329" alt="image" src="https://github.com/user-attachments/assets/256bc58c-5894-4ffd-9f87-c5902a5ca009" />
+<p align="center">
+    <img width="242" height="208" alt="image" src="https://github.com/user-attachments/assets/73f40d03-f98a-49ba-995f-f454a15f203e" />
+</p>
 
 The CAN network consists of multiple CAN nodes interconnected through a differential pair: CANH (High) and CANL (Low). Each node includes a microcontroller, a CAN controller, and a transceiver such as the MCP2551, which ensures reliable communication across the bus. Termination resistors (RT) are used at both ends of the network to prevent signal reflections. For practical implementation and debugging, a CAN frame analyzer can be connected, and status LEDs (e.g., D3 on PB0) may be used for visual feedback.
 
@@ -91,14 +95,18 @@ The CAN network consists of multiple CAN nodes interconnected through a differen
 
 ## CAN BLOCK DIAGRAM
 
-<img width="620" height="349" alt="image" src="https://github.com/user-attachments/assets/cc7782b3-6512-494f-9399-1dd18a84fa2c" />
+<p align="center">
+    <img width="620" height="349" alt="image" src="https://github.com/user-attachments/assets/cc7782b3-6512-494f-9399-1dd18a84fa2c" />
+</p>
 
 
 ---
 
 ## DATA FRAME FORMAT
 
-<img width="620" height="349" alt="image" src="https://github.com/user-attachments/assets/d1e611e4-3508-4fd5-95ad-d6d24ca49bb1" />
+<p align="center">
+    <img width="620" height="349" alt="image" src="https://github.com/user-attachments/assets/d1e611e4-3508-4fd5-95ad-d6d24ca49bb1" />
+</p>
 
 The CAN protocol uses structured data frames to ensure reliable communication. Each frame consists of several fields: the Arbitration Field (which includes the identifier and priority), the Control Field (which indicates data length), the Data Field (containing the actual payload), and error-checking fields like CRC, ACK, and delimiters. CAN supports both Standard (11-bit identifier) and Extended (29-bit identifier) formats, providing flexibility in addressing and message filtering.
 
