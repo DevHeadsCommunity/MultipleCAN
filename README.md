@@ -86,7 +86,7 @@ The CAN network topology connects multiple CAN nodes using two differential line
 ## CONNECTION DETAILS
 
 <p align="center">
-    <img width="242" height="208" alt="image" src="https://github.com/user-attachments/assets/73f40d03-f98a-49ba-995f-f454a15f203e" />
+    <img width="869" height="318" alt="image" src="https://github.com/user-attachments/assets/1400cf87-0544-4571-986b-007ad79d9392" />
 </p>
 
 The CAN network consists of multiple CAN nodes interconnected through a differential pair: CANH (High) and CANL (Low). Each node includes a microcontroller, a CAN controller, and a transceiver such as the MCP2551, which ensures reliable communication across the bus. Termination resistors (RT) are used at both ends of the network to prevent signal reflections. For practical implementation and debugging, a CAN frame analyzer can be connected, and status LEDs (e.g., D3 on PB0) may be used for visual feedback.
